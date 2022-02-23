@@ -10,11 +10,6 @@
     "cm": "cz",
     "postinstall": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
