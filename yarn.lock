@@ -288,6 +288,18 @@
     "@commitlint/types" "^16.2.1"
     ajv "^6.12.6"
 
+"@commitlint/cz-commitlint@^16.2.1":
+  version "16.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-16.2.1.tgz#49a1b777eabe9929e45a035546c14c8aa8dbe044"
+  integrity sha512-qkluaFI7TpfTSNvcXpv0F7xfjSfi4CRPpmIDRnktphf83Jhsa7/8zzsyy1ISjWOpbCdAatKEP2HfdwXFAFwCXA==
+  dependencies:
+    "@commitlint/ensure" "^16.2.1"
+    "@commitlint/load" "^16.2.1"
+    "@commitlint/types" "^16.2.1"
+    chalk "^4.1.0"
+    lodash "^4.17.21"
+    word-wrap "^1.2.3"
+
 "@commitlint/ensure@^16.2.1":
   version "16.2.1"
   resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-16.2.1.tgz#0fc538173f95c1eb2694eeedb79cab478347f16f"
@@ -1245,7 +1257,7 @@ chalk@^2.0.0, chalk@^2.4.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
