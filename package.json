@@ -42,7 +42,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-emoji"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
