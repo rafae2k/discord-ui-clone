@@ -84,6 +84,10 @@ export const HideMembersList = styled(UserFriends)`
 export const SearchWrapper = styled.div`
   width: 14.4rem;
   height: 2.4rem;
+
+  > input:focus {
+    width: 20rem;
+  }
 `;
 
 export const SearchIcon = styled(SearchIcon1)`
