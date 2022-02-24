@@ -6,8 +6,7 @@ import { ListPlus } from '@styled-icons/boxicons-regular/ListPlus';
 import { UserFriends } from '@styled-icons/fa-solid/UserFriends';
 import { Search as SearchIcon1 } from '@styled-icons/boxicons-regular/Search';
 import { Inbox as InboxIcon } from '@styled-icons/boxicons-solid/Inbox';
-import { HelpCircle } from '@styled-icons/boxicons-solid/HelpCircle'
-
+import { HelpCircle } from '@styled-icons/boxicons-solid/HelpCircle';
 
 export const Toolbar = styled.div`
   display: flex;
@@ -16,42 +15,7 @@ export const Toolbar = styled.div`
   justify-content: flex-end;
 
   gap: 1rem;
-`
-
-
-export const Notifications = styled(Bell)`
-  width: 2rem;
-  height: 2rem;
-
-  color: var(--white);
-  opacity: 70%;
-
-  cursor: pointer;
-
-  transition: opacity 0.2s ease-in;
-
-  &:hover {
-    opacity: 100%;
-  }
-`
-
-
-export const FixedMessages = styled(PinAngleFill)`
-  width: 2rem;
-  height: 2rem;
-
-  color: var(--white);
-  opacity: 70%;
-
-  cursor: pointer;
-
-  transition: opacity 0.2s ease-in;
-
-  &:hover {
-    opacity: 100%;
-  }
-`
-
+`;
 
 export const Topics = styled(ListPlus)`
   width: 2.8rem;
@@ -67,8 +31,39 @@ export const Topics = styled(ListPlus)`
   &:hover {
     opacity: 100%;
   }
-`
+`;
 
+export const Notifications = styled(Bell)`
+  width: 2rem;
+  height: 2rem;
+
+  color: var(--white);
+  opacity: 70%;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 100%;
+  }
+`;
+
+export const FixedMessages = styled(PinAngleFill)`
+  width: 2rem;
+  height: 2rem;
+
+  color: var(--white);
+  opacity: 70%;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 100%;
+  }
+`;
 
 export const HideMembersList = styled(UserFriends)`
   width: 2.2rem;
@@ -84,14 +79,12 @@ export const HideMembersList = styled(UserFriends)`
   &:hover {
     opacity: 100%;
   }
-`
-
+`;
 
 export const SearchWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-`
-
+  width: 14.4rem;
+  height: 2.4rem;
+`;
 
 export const SearchIcon = styled(SearchIcon1)`
   width: 1.2rem;
@@ -105,8 +98,8 @@ export const Input = styled.input`
   display: flex;
   position: relative;
 
-  width: 14.4rem;
-  height: 2.4rem;
+  width: 100%;
+  height: 100%;
 
   padding: 1rem;
 
@@ -126,16 +119,15 @@ export const Input = styled.input`
 
   ~ svg {
     position: relative;
-    top: -1rem;
-    left: 12rem;
-    transition: 180 ease-in-out; 
+    top: -1.7rem;
+    left: 12.5rem;
+    transition: 180 ease-in-out;
   }
 
-  &:focus {
+  /* &:focus {
     width: 20rem;
-  }
-`
-
+  } */
+`;
 
 export const Inbox = styled(InboxIcon)`
   width: 2rem;
@@ -151,8 +143,7 @@ export const Inbox = styled(InboxIcon)`
   &:hover {
     opacity: 100%;
   }
-`
-
+`;
 
 export const Help = styled(HelpCircle)`
   width: 2rem;
@@ -168,4 +159,4 @@ export const Help = styled(HelpCircle)`
   &:hover {
     opacity: 100%;
   }
-`
+`;

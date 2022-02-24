@@ -1,10 +1,8 @@
-import { ReactNode } from 'react';
-
 import {
   Toolbar,
+  Topics,
   Notifications,
   FixedMessages,
-  Topics,
   HideMembersList,
   SearchWrapper,
   SearchIcon,
@@ -13,19 +11,21 @@ import {
   Help,
 } from './styles';
 
+import Tooltip from '../Tooltip';
+
 function ChannelToolbar() {
   return (
     <Toolbar>
-      <Topics />
-      <Notifications />
-      <FixedMessages />
-      <HideMembersList />
+      <Tooltip name='Topics' icon={<Topics />} />
+      <Tooltip name='Notifications' icon={<Notifications />} />
+      <Tooltip name='Fixed Messages' icon={<FixedMessages />} />
+      <Tooltip name='Hide Member List' icon={<HideMembersList />} />
       <SearchWrapper>
-        <Input placeholder="Search"/>
+        <Input placeholder='Search' />
         <SearchIcon />
       </SearchWrapper>
-      <Inbox />
-      <Help />
+      <Tooltip name='Inbox' icon={<Inbox />} />
+      <Tooltip name='Need help?' icon={<Help />} />
     </Toolbar>
   );
 }
