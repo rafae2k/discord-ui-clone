@@ -1,16 +1,27 @@
-import React from 'react';
-
 import ServerButton from '../ServerButton';
+import Tooltip from '../Tooltip';
+
 import { Container, Separator } from './styles';
 
 function ServerList() {
   return (
     <Container>
-      <ServerButton isHome />
+      <Tooltip name='Topics' icon={<ServerButton isHome />} />
 
       <Separator />
 
-      <ServerButton hasNotifications />
+      <Tooltip
+        name='Servidor do Rafo'
+        icon={<ServerButton hasNotifications />}
+        side={'left'}
+      />
+
+      <Tooltip
+        name='Servidor do Rafo'
+        icon={<ServerButton hasNotifications />}
+        side={'right'}
+      />
+
       <ServerButton mentions={1020} />
       <ServerButton />
       <ServerButton mentions={1} />

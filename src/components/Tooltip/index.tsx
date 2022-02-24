@@ -11,16 +11,17 @@ import {
 export interface Props {
   name: string;
   icon: ReactNode;
+  side?: 'bottom' | 'left' | 'right' | 'top' | undefined;
 }
 
-const Tooltip: React.FC<Props> = ({ name, icon }) => {
+const Tooltip: React.FC<Props> = ({ name, icon, side = 'bottom' }) => {
   return (
     <Provider delayDuration={200} skipDelayDuration={500}>
       <TooltipRoot>
         <TooltipTrigger asChild>{icon}</TooltipTrigger>
-        <TooltipContent sideOffset={5}>
-          {name}
+        <TooltipContent side={side} sideOffset={5}>
           <StyledArrow />
+          {name}
         </TooltipContent>
       </TooltipRoot>
     </Provider>
