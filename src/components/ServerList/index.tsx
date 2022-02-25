@@ -6,25 +6,16 @@ import { Container, Separator } from './styles';
 function ServerList() {
   return (
     <Container>
-      <Tooltip name='Topics' icon={<ServerButton isHome />} />
+      <ServerButton name='Discord' isHome />
 
       <Separator />
 
-      <Tooltip
-        name='Servidor do Rafo'
-        icon={<ServerButton hasNotifications />}
-        side={'left'}
-      />
+      <ServerButton name='Servidor do Rafo' hasNotifications />
+      <ServerButton name='Servidor do Rafo' hasNotifications />
+      <ServerButton name='Servidor do Rafo' mentions={1020} />
+      <ServerButton name='Servidor do Rafo'/>
+      <ServerButton name='Servidor do Rafo' mentions={1} />
 
-      <Tooltip
-        name='Servidor do Rafo'
-        icon={<ServerButton hasNotifications />}
-        side={'right'}
-      />
-
-      <ServerButton mentions={1020} />
-      <ServerButton />
-      <ServerButton mentions={1} />
     </Container>
   );
 }
