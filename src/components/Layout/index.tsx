@@ -1,10 +1,8 @@
-import React, { ReactNode } from 'react';
-
 import { Grid } from './styles';
 
 import ServerList from '../ServerList';
 import ServerName from '../ServerName';
-import ChannelInfo from '../ChannelInfo'
+import ChannelInfo from '../ChannelInfo';
 
 function Layout() {
   return (

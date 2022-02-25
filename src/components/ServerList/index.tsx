@@ -1,19 +1,21 @@
-import React from 'react';
-
 import ServerButton from '../ServerButton';
+import Tooltip from '../Tooltip';
+
 import { Container, Separator } from './styles';
 
 function ServerList() {
   return (
     <Container>
-      <ServerButton isHome />
+      <ServerButton name='Discord' isHome />
 
       <Separator />
 
-      <ServerButton hasNotifications />
-      <ServerButton mentions={1020} />
-      <ServerButton />
-      <ServerButton mentions={1} />
+      <ServerButton name='Servidor do Rafo' hasNotifications />
+      <ServerButton name='Servidor do Rafo' hasNotifications />
+      <ServerButton name='Servidor do Rafo' mentions={1020} />
+      <ServerButton name='Servidor do Rafo'/>
+      <ServerButton name='Servidor do Rafo' mentions={1} />
+
     </Container>
   );
 }
