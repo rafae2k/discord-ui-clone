@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 
 import {
-  Provider,
   TooltipRoot,
   TooltipTrigger,
   TooltipContent,
@@ -12,19 +11,18 @@ export interface Props {
   name: string;
   icon: ReactNode;
   side?: 'bottom' | 'left' | 'right' | 'top' | undefined;
+  offset?:number
 }
 
-const Tooltip: React.FC<Props> = ({ name, icon, side = 'bottom' }) => {
+const Tooltip: React.FC<Props> = ({ name, icon, side = 'bottom', offset = 5 }) => {
   return (
-    <Provider delayDuration={200} skipDelayDuration={500}>
-      <TooltipRoot >
-        <TooltipTrigger asChild>{icon}</TooltipTrigger>
-        <TooltipContent side={side} sideOffset={5}>
+    <TooltipRoot >
+      <TooltipTrigger asChild>{icon}</TooltipTrigger>
+        <TooltipContent side={side} sideOffset={offset}>
           <StyledArrow />
           {name}
         </TooltipContent>
-      </TooltipRoot>
-    </Provider>
+    </TooltipRoot>
   );
 };
 

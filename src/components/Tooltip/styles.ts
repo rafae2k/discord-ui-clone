@@ -48,7 +48,6 @@ export const StyledArrow = stitches(TooltipPrimitive.Arrow, {
 });
 
 // Exports
-export const Provider = TooltipPrimitive.Provider;
 export const TooltipRoot = TooltipPrimitive.Root;
 export const TooltipTrigger = TooltipPrimitive.Trigger;
 export const TooltipContent = StyledContent;
